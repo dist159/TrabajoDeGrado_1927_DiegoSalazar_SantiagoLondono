@@ -1,0 +1,7 @@
+{
+  "name": "gallinasapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

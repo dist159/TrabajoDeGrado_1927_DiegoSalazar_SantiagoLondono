@@ -1,0 +1,209 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     Atras
+    </ion-title>
+    <ion-button slot="start" fill="clear" (click)="back()">
+      <ion-icon style="color:rgb(0, 0, 0); font-size: 25px" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content style="--background: #212852; height: 100%;" fullscreen=true>
+
+
+
+
+
+
+<ion-row class="ion-text-center" style="width: 100%; margin: auto;">
+  <h1 class="ion-text-center" style="width: 100%; font-family: 'moon';margin:auto ;color: white; margin-top: 15px; letter-spacing: 4px;">CONTROL ACTUADORES</h1>
+</ion-row>
+
+
+
+  <!-- Actuadores Maqueta-->
+  <ion-card style="background: transparent;">
+    <ion-row style="background: transparent;">
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act1Encender()"> Calefactor 1
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act1Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador1" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador1" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act2Encender()"> Calefactor 2
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act2Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador2" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador2" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act3Encender()"> Extractor</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act3Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador3" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador3" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act4Encender()"> Humidificador
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act4Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador4" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador4" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act4Encender()"> ACT 5
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act4Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador5" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador5" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act4Encender()"> ACT 6
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act4Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador6" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador6" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act4Encender()"> ACT 7
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act4Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador7" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador7" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card style="background: transparent;">
+    <ion-row text-center>
+      <ion-col>
+        <ion-button fill="outline" color="light" style="width: 135px;text-transform:none!important;" (click)="Act4Encender()"> ACT 8
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button fill="outline" style="width: 135px;" expand="expand" color="danger" (click)="Act4Apagar()"> Apagar
+        </ion-button>
+      </ion-col>
+      <ion-col text-center style="margin: auto;">
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="!Actuador8" name="ellipse"
+          color=success></ion-icon>
+        <ion-icon style="margin: auto;margin-left: 45%; font-size: larger;" *ngIf="Actuador8" name="ellipse"
+          color=danger></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+
+  <!-- Graficas para cada sensor -->
+
+
+  <ion-row style="margin-top: 390px;">
+    <h1 style="font-family: 'moon';margin:auto ;color: white; margin-top: 15px; letter-spacing: 4px;">ESTADISTICAS</h1>
+  </ion-row>
+
+  <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions" [colors]="chartColors2"
+    [legend]="showLegend" [chartType]="chartType">
+  </canvas>
+
+  <canvas baseChart [datasets]="chartData2" [labels]="chartLabels2" [options]="chartOptions2" [colors]="chartColors2"
+    [legend]="showLegend2" [chartType]="chartType">
+  </canvas>
+
+  <canvas baseChart [datasets]="chartData3" [labels]="chartLabels3" [options]="chartOptions3" [colors]="chartColors2"
+    [legend]="showLegend2" [chartType]="chartType">
+  </canvas>
+
+
+  <canvas baseChart [datasets]="chartData4" [labels]="chartLabels4" [options]="chartOptions4" [colors]="chartColors2"
+    [legend]="showLegend2" [chartType]="chartType">
+  </canvas>
+
+  <canvas baseChart [datasets]="chartData5" [labels]="chartLabels5" [options]="chartOptions5" [colors]="chartColors2"
+    [legend]="showLegend2" [chartType]="chartType">
+  </canvas>
+
+  <canvas baseChart [datasets]="chartData6" [labels]="chartLabels6" [options]="chartOptions6" [colors]="chartColors2"
+    [legend]="showLegend2" [chartType]="chartType">
+  </canvas>
+
+
+
+</ion-content>
