@@ -9,6 +9,9 @@ En este repositorio se encuentran 5 carpetas. Cada carpeta contiene el codigo un
 
 En esta carpeta se encuentra se encuentra toda el codigo de la aplicacion desarrollada en el framework de Ionic 5. Se incluye toda la lógica interna, diseños de interfaz, archivos bases, entre otros.
 
+![alt text](https://ibb.co/zmy5WJy)
+![alt text](https://ibb.co/z6XxwN1)
+
 
 # Backend server (motor del servidor)
 
