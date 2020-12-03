@@ -11,7 +11,7 @@ En esta carpeta se encuentra se encuentra toda el codigo de la aplicacion desarr
 
 
 
-<p float="center">
+<p align="center">
  
 <img src="https://i.ibb.co/dfdcsgd/inicio-De-Sesion.png" width="200" >
 <img src="https://i.ibb.co/wcSg1YT/Screenshot-2020-11-19-22-25-25-67.jpg" width="200" >
